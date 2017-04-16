@@ -19,3 +19,35 @@ API сервера статистики состоит из следующих �
 /reports/best-players[/<count>] GET
 /reports/popular-servers[/<count>] GET
 
+
+Пример ответа на запрос 
+GET /reports/recent-matches[/<count>]
+
+[
+	{
+		"server": "62.210.26.88-1337",
+		"timestamp": "2017-01-22T15:11:12Z",
+		"results":	{
+	"map": "DM-HelloWorld",
+	"gameMode": "DM",
+	"fragLimit": 20,
+	"timeLimit": 20,
+	"timeElapsed": 12.345678,
+	"scoreboard": [
+		{
+			"name": "Player1",
+			"frags": 20,
+			"kills": 21,
+			"deaths": 3
+		},
+		{
+			"name": "Player2",
+			"frags": 2,
+			"kills": 2,
+			"deaths": 21
+		}
+]
+}
+	},
+	...
+]
