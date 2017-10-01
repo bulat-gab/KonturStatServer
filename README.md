@@ -7,23 +7,23 @@
 
 API сервера статистики состоит из следующих методов:
 
-/servers/<endpoint>/info PUT, GET
-/servers/<endpoint>/matches/<timestamp> PUT, GET
+- /servers/<endpoint>/info PUT, GET
+- /servers/<endpoint>/matches/<timestamp> PUT, GET
 
-/servers/info GET
+- /servers/info GET
 
-/servers/<endpoint>/stats GET
-/players/<name>/stats GET
+- /servers/<endpoint>/stats GET
+- /players/<name>/stats GET
 
-/reports/recent-matches[/<count>] GET
-/reports/best-players[/<count>] GET
-/reports/popular-servers[/<count>] GET
+- /reports/recent-matches[/<count>] GET
+- /reports/best-players[/<count>] GET
+- /reports/popular-servers[/<count>] GET
 
 
 
 Пример ответа на запрос 
 GET /reports/recent-matches[/<count>]
-
+'''
 [
 	{
 		"server": "62.210.26.88-1337",
@@ -52,3 +52,4 @@ GET /reports/recent-matches[/<count>]
 	},
 	...
 ]
+'''
