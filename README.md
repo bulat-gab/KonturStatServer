@@ -7,8 +7,8 @@
 
 API сервера статистики состоит из следующих методов:
 
-- /servers/<endpoint>/info PUT, GET
-- /servers/<endpoint>/matches/<timestamp> PUT, GET
+- /servers/\<endpoint\>/info PUT, GET
+- /servers/\<endpoint\>/matches/\<timestamp\> PUT, GET
 
 - /servers/info GET
 
