@@ -15,14 +15,14 @@ API сервера статистики состоит из следующих �
 - /servers/<endpoint>/stats GET
 - /players/<name>/stats GET
 
-- /reports/recent-matches/\<count\> GET
-- /reports/best-players/\<count\> GET
+- /reports/recent-matches[/\<count\>] GET
+- /reports/best-players[/\<count\>] GET
 - /reports/popular-servers[/\<count\>] GET
 
 
 
 Пример ответа на запрос 
-GET /reports/recent-matches[\<count\>]
+GET /reports/recent-matches[/\<count\>]
 ```
 [
 	{
